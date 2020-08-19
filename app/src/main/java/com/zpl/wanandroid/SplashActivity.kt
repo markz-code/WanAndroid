@@ -2,11 +2,14 @@ package com.zpl.wanandroid
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.zpl.wanandroid.base.BaseActivity
 
-class SplashActivity : AppCompatActivity() {
+class SplashActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+    override fun getLayoutId(): Int? = R.layout.activity_splash
+
+    override fun init(savedInstanceState: Bundle?) {
+
     }
+
 }
