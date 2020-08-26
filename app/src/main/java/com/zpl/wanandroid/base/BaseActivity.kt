@@ -7,8 +7,9 @@ import androidx.lifecycle.ViewModelProvider
 import com.zpl.wanandroid.utils.ColorUtils
 import com.zpl.wanandroid.utils.StatusUtils
 
-abstract class BaseActivity : AppCompatActivity(){
+abstract class BaseActivity : AppCompatActivity() {
     private var mActivityProvider: ViewModelProvider? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         getLayoutId()?.let { setContentView(it) }
